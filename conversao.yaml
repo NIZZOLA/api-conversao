@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: conversaopod
+  labels:
+    app: conversao
+spec: 
+  containers: 
+  -  name: site
+     image: nizzola/api-conversao
+     ports:
+      - containerPort: 80
